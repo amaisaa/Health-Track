@@ -30,7 +30,7 @@
   </nav>
 
   <div class="p-3 pb-80">
-    <div class="avatar" style="background-image: url(https://i.pinimg.com/564x/9f/2a/7d/9f2a7d6fa9043cdfa76154ae99da7199.jpg);"></div>
+    <div class="avatar" style="background-image: url(https://www.todecacho.com.br/wp-content/uploads/2018/03/iStock-688944806.jpg);"></div>
       <form>
         <div class="form-group">
           <label for="exampleInputEmail1">SEXO</label>
@@ -87,6 +87,19 @@
     <a href="index.html" type="submit" class="btn btn-primary">SALVAR</a>
   </div>
 
-
 </body>
+<!-- Chatbot  IBM  -->
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "7ca095fd-e597-4f68-8e25-125c1e307663", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "e16a263c-812d-42c8-879e-bbb67f098a47", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 </html>

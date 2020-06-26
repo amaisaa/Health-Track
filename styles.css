@@ -144,7 +144,7 @@ body {
 
 
 .btn-full {
-  width: 100%;
+  width: 90%;
   padding: 10px 0px;
 }
 
@@ -155,6 +155,7 @@ body {
   left: 0;
   width: 100%;
   padding: 15px;
+  text-align: center;
 }
 
 /* nova atividade */
@@ -179,9 +180,9 @@ input[type=email]:focus,
 input[type=password],
 input[type=password]:active,
 input[type=password]:focus,
-textarea,
-textarea:active,
-textarea:focus
+textarea:not(.WAC__TextArea-textarea),
+textarea:not(.WAC__TextArea-textarea):active,
+textarea:not(.WAC__TextArea-textarea):focus
 {
   background-color: transparent!important;
   border: none!important;
@@ -271,4 +272,20 @@ textarea:focus
 .humor-box .options .option {
   text-align: center;
   width: 70px;
+}
+
+.WAC__TextArea-textarea,
+.WAC__TextArea-textarea:focus {
+  color: black !important;
+}
+
+.back-fundo {
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/154/923/original/elderly-couple-with-healthcare-robot.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #5654a3;
+  height: 100vh;
+
+
 }
